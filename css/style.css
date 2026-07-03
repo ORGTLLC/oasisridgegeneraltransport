@@ -1,0 +1,1004 @@
+/* =====================================================
+GOOGLE FONT
+===================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* =====================================================
+ROOT VARIABLES
+===================================================== */
+
+:root{
+
+--primary-color:#0B1F35;
+--secondary-color:#F4B400;
+--white:#ffffff;
+--black:#111111;
+--text:#666666;
+--light:#f8f9fa;
+--shadow:0 10px 30px rgba(0,0,0,.10);
+--transition:.3s ease;
+
+}
+
+/* =====================================================
+RESET
+===================================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+html{
+overflow-x:hidden;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:var(--white);
+color:var(--black);
+overflow-x:hidden;
+line-height:1.6;
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+ul{
+list-style:none;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+/* =====================================================
+COMMON BUTTONS
+===================================================== */
+
+.btn-primary{
+
+display:inline-block;
+padding:15px 35px;
+background:var(--secondary-color);
+color:var(--white);
+border-radius:50px;
+font-weight:600;
+transition:var(--transition);
+
+}
+
+.btn-primary:hover{
+
+background:#d89d00;
+transform:translateY(-3px);
+
+}
+
+.btn-secondary{
+
+display:inline-block;
+padding:15px 35px;
+border:2px solid var(--white);
+color:var(--white);
+border-radius:50px;
+font-weight:600;
+transition:var(--transition);
+
+}
+
+.btn-secondary:hover{
+
+background:var(--white);
+color:var(--primary-color);
+
+}
+
+/* =====================================================
+LOADER
+===================================================== */
+
+#loader{
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:var(--primary-color);
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:99999;
+
+}
+
+.loader-logo img{
+
+width:130px;
+
+}
+
+/* =====================================================
+HEADER
+===================================================== */
+
+header{
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+z-index:999;
+transition:.4s;
+
+}
+
+.navbar{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 5%;
+background:rgba(11,31,53,.90);
+backdrop-filter:blur(10px);
+
+}
+
+.logo img{
+
+height:65px;
+
+}
+
+.nav-menu{
+
+display:flex;
+gap:30px;
+
+}
+
+.nav-menu li a{
+
+color:var(--white);
+font-weight:500;
+transition:var(--transition);
+
+}
+
+.nav-menu li a:hover,
+.nav-menu li a.active{
+
+color:var(--secondary-color);
+
+}
+
+.header-btn{
+
+display:flex;
+align-items:center;
+
+}
+
+.menu-toggle{
+
+display:none;
+font-size:28px;
+color:var(--white);
+cursor:pointer;
+
+}
+/* =====================================================
+HERO SECTION
+===================================================== */
+
+.hero{
+    position:relative;
+    width:100%;
+    min-height:100vh;
+    background:url("../images/hero-main.webp") center center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+}
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(11,31,53,.70);
+}
+
+.hero .container{
+    position:relative;
+    z-index:2;
+}
+
+.hero-content{
+    max-width:750px;
+    color:#fff;
+}
+
+.hero-content h4{
+    color:var(--secondary-color);
+    font-size:18px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-bottom:20px;
+}
+
+.hero-content h1{
+    font-size:62px;
+    line-height:1.2;
+    margin-bottom:25px;
+    font-weight:800;
+}
+
+.hero-content p{
+    font-size:18px;
+    line-height:1.9;
+    max-width:650px;
+    margin-bottom:40px;
+    color:#e7e7e7;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.btn-outline{
+    display:inline-block;
+    padding:15px 38px;
+    border:2px solid #fff;
+    color:#fff;
+    border-radius:50px;
+    transition:.3s;
+}
+
+.btn-outline:hover{
+    background:#fff;
+    color:var(--primary-color);
+}
+
+/* =====================================================
+SECTION HEADING
+===================================================== */
+
+.section{
+    padding:100px 0;
+}
+
+.section-heading{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-heading span{
+    color:var(--secondary-color);
+    font-weight:700;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+
+.section-heading h2{
+    font-size:42px;
+    margin:15px 0;
+}
+
+.section-heading p{
+    max-width:700px;
+    margin:auto;
+    color:#666;
+    line-height:1.8;
+}
+
+/* =====================================================
+COMPANY OVERVIEW
+===================================================== */
+
+.overview-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.overview-card{
+    background:#fff;
+    padding:40px 30px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.overview-card:hover{
+    transform:translateY(-10px);
+}
+
+.overview-card i{
+    font-size:45px;
+    color:var(--secondary-color);
+    margin-bottom:20px;
+}
+
+.overview-card h3{
+    margin-bottom:15px;
+}
+
+.overview-card p{
+    color:#666;
+    line-height:1.8;
+}
+
+/* =====================================================
+ABOUT
+===================================================== */
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
+}
+
+.about-image img{
+    width:100%;
+    border-radius:20px;
+}
+
+.about-content span{
+    color:var(--secondary-color);
+    font-weight:700;
+}
+
+.about-content h2{
+    font-size:42px;
+    margin:20px 0;
+}
+
+.about-content p{
+    margin-bottom:20px;
+    color:#666;
+    line-height:1.9;
+}
+
+/* =====================================================
+VISION & MISSION
+===================================================== */
+
+.vm-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:35px;
+}
+
+.vision-card,
+.mission-card{
+    background:#fff;
+    padding:45px;
+    border-radius:20px;
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.vision-card:hover,
+.mission-card:hover{
+    transform:translateY(-8px);
+}
+
+.vision-card i,
+.mission-card i{
+    font-size:45px;
+    color:var(--secondary-color);
+    margin-bottom:20px;
+}
+
+.vision-card h3,
+.mission-card h3{
+    margin-bottom:15px;
+}
+
+.vision-card p,
+.mission-card p{
+    color:#666;
+    line-height:1.9;
+}
+
+/* =====================================================
+CORE VALUES
+===================================================== */
+
+.values-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:25px;
+}
+
+.value-card{
+    background:#fff;
+    padding:35px 20px;
+    text-align:center;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.value-card:hover{
+    background:var(--primary-color);
+    color:#fff;
+    transform:translateY(-8px);
+}
+
+.value-card i{
+    font-size:38px;
+    color:var(--secondary-color);
+    margin-bottom:18px;
+}
+
+.value-card:hover i{
+    color:#fff;
+}
+/* =====================================================
+SERVICES SECTION
+===================================================== */
+
+.services{
+background:var(--light);
+}
+
+.services-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+
+}
+
+.service-card{
+
+background:var(--white);
+border-radius:20px;
+overflow:hidden;
+box-shadow:var(--shadow);
+transition:var(--transition);
+
+}
+
+.service-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.service-card img{
+
+width:100%;
+height:230px;
+object-fit:cover;
+
+}
+
+.service-card h3{
+
+padding:25px 25px 10px;
+
+}
+
+.service-card p{
+
+padding:0 25px;
+color:var(--text);
+line-height:1.8;
+
+}
+
+.service-card a{
+
+display:inline-block;
+margin:25px;
+font-weight:600;
+color:var(--secondary-color);
+
+}
+
+/* =====================================================
+FLEET SECTION
+===================================================== */
+
+.fleet-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+margin-bottom:40px;
+
+}
+
+.fleet-grid img{
+
+width:100%;
+height:260px;
+object-fit:cover;
+border-radius:18px;
+transition:var(--transition);
+box-shadow:var(--shadow);
+
+}
+
+.fleet-grid img:hover{
+
+transform:scale(1.05);
+
+}
+
+.center-btn{
+
+text-align:center;
+margin-top:20px;
+
+}
+
+/* =====================================================
+MATERIAL SUPPLY
+===================================================== */
+
+.materials{
+
+background:var(--light);
+
+}
+
+.materials-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+
+}
+
+.material-box{
+
+background:var(--primary-color);
+color:var(--white);
+padding:35px;
+border-radius:18px;
+text-align:center;
+font-size:18px;
+font-weight:600;
+transition:var(--transition);
+
+}
+
+.material-box:hover{
+
+background:var(--secondary-color);
+color:var(--primary-color);
+transform:translateY(-8px);
+
+}
+
+/* =====================================================
+WHY CHOOSE US
+===================================================== */
+
+.why-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+
+}
+
+.why-card{
+
+background:var(--white);
+padding:35px;
+text-align:center;
+border-radius:20px;
+box-shadow:var(--shadow);
+transition:var(--transition);
+
+}
+
+.why-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.why-card i{
+
+font-size:42px;
+color:var(--secondary-color);
+margin-bottom:20px;
+
+}
+
+.why-card h4{
+
+font-size:22px;
+
+}
+
+/* =====================================================
+COUNTER SECTION
+===================================================== */
+
+.counter-section{
+
+background:linear-gradient(rgba(11,31,53,.92),
+rgba(11,31,53,.92)),
+url("../images/hero-main.webp");
+
+background-size:cover;
+background-position:center;
+padding:100px 0;
+
+}
+
+.counter-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+
+}
+
+.counter-box{
+
+text-align:center;
+color:var(--white);
+
+}
+
+.counter-box h2{
+
+font-size:60px;
+color:var(--secondary-color);
+margin-bottom:10px;
+
+}
+
+.counter-box p{
+
+font-size:18px;
+letter-spacing:1px;
+
+}
+/* =====================================================
+CTA SECTION
+===================================================== */
+
+.cta-section{
+
+background:linear-gradient(rgba(11,31,53,.90),rgba(11,31,53,.90)),
+url("../images/about-company.webp");
+
+background-size:cover;
+background-position:center;
+padding:100px 0;
+text-align:center;
+color:var(--white);
+
+}
+
+.cta-content h2{
+
+font-size:48px;
+margin-bottom:20px;
+
+}
+
+.cta-content p{
+
+max-width:700px;
+margin:0 auto 35px;
+line-height:1.8;
+font-size:18px;
+
+}
+
+/* =====================================================
+CONTACT PREVIEW
+===================================================== */
+
+.contact-preview{
+
+background:var(--light);
+
+}
+
+.contact-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:50px;
+
+}
+
+.contact-box{
+
+background:var(--white);
+padding:40px 25px;
+text-align:center;
+border-radius:20px;
+box-shadow:var(--shadow);
+transition:var(--transition);
+
+}
+
+.contact-box:hover{
+
+transform:translateY(-10px);
+
+}
+
+.contact-box i{
+
+font-size:42px;
+color:var(--secondary-color);
+margin-bottom:20px;
+
+}
+
+.contact-box h4{
+
+margin-bottom:12px;
+
+}
+
+.contact-box p{
+
+color:var(--text);
+
+}
+
+/* =====================================================
+GOOGLE MAP
+===================================================== */
+
+.map-section iframe{
+
+width:100%;
+height:450px;
+border:0;
+
+}
+
+/* =====================================================
+FOOTER
+===================================================== */
+
+footer{
+
+background:var(--primary-color);
+color:var(--white);
+padding:80px 0 25px;
+
+}
+
+.footer-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:40px;
+margin-bottom:40px;
+
+}
+
+.footer-logo{
+
+width:180px;
+margin-bottom:20px;
+
+}
+
+.footer-grid h3{
+
+margin-bottom:20px;
+color:var(--secondary-color);
+
+}
+
+.footer-grid ul li{
+
+margin-bottom:12px;
+
+}
+
+.footer-grid ul li a{
+
+transition:var(--transition);
+
+}
+
+.footer-grid ul li a:hover{
+
+color:var(--secondary-color);
+
+}
+
+.social-icons{
+
+display:flex;
+gap:15px;
+margin-top:20px;
+
+}
+
+.social-icons a{
+
+width:45px;
+height:45px;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:50%;
+background:rgba(255,255,255,.10);
+transition:var(--transition);
+
+}
+
+.social-icons a:hover{
+
+background:var(--secondary-color);
+color:var(--primary-color);
+
+}
+
+footer hr{
+
+border:none;
+height:1px;
+background:rgba(255,255,255,.15);
+margin:35px 0;
+
+}
+
+.copyright{
+
+text-align:center;
+font-size:15px;
+color:#ccc;
+
+}
+
+/* =====================================================
+WHATSAPP BUTTON
+===================================================== */
+
+.whatsapp{
+
+position:fixed;
+right:25px;
+bottom:90px;
+width:60px;
+height:60px;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#25D366;
+color:#fff;
+border-radius:50%;
+font-size:30px;
+z-index:999;
+box-shadow:0 10px 25px rgba(0,0,0,.30);
+transition:var(--transition);
+
+}
+
+.whatsapp:hover{
+
+transform:scale(1.1);
+
+}
+
+/* =====================================================
+BACK TO TOP
+===================================================== */
+
+#topBtn{
+
+position:fixed;
+right:25px;
+bottom:20px;
+width:55px;
+height:55px;
+border:none;
+border-radius:50%;
+background:var(--secondary-color);
+color:var(--white);
+font-size:22px;
+cursor:pointer;
+display:none;
+z-index:999;
+transition:var(--transition);
+
+}
+
+#topBtn:hover{
+
+background:#d89d00;
+
+}
+
+/* =====================================================
+UTILITY
+===================================================== */
+
+.text-center{
+
+text-align:center;
+
+}
+
+.mt-50{
+
+margin-top:50px;
+
+}
+
+.mb-50{
+
+margin-bottom:50px;
+
+}
+
+/* =====================================================
+SCROLLBAR
+===================================================== */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#eee;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:var(--secondary-color);
+border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+background:#d89d00;
+
+}
+
+/* =====================================================
+SELECTION
+===================================================== */
+
+::selection{
+
+background:var(--secondary-color);
+color:var(--white);
+
+}
+
+/* =====================================================
+END OF STYLE.CSS
+===================================================== */

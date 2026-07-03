@@ -1,0 +1,203 @@
+/* =====================================================
+FADE ANIMATIONS
+===================================================== */
+
+@keyframes fadeIn{
+
+0%{
+opacity:0;
+}
+
+100%{
+opacity:1;
+}
+
+}
+
+.fade-in{
+animation:fadeIn 1s ease forwards;
+}
+
+/* =====================================================
+FADE UP
+===================================================== */
+
+@keyframes fadeUp{
+
+0%{
+opacity:0;
+transform:translateY(40px);
+}
+
+100%{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+.fade-up{
+animation:fadeUp .8s ease forwards;
+}
+
+/* =====================================================
+FADE DOWN
+===================================================== */
+
+@keyframes fadeDown{
+
+0%{
+opacity:0;
+transform:translateY(-40px);
+}
+
+100%{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+.fade-down{
+animation:fadeDown .8s ease forwards;
+}
+
+/* =====================================================
+FADE LEFT
+===================================================== */
+
+@keyframes fadeLeft{
+
+0%{
+opacity:0;
+transform:translateX(-40px);
+}
+
+100%{
+opacity:1;
+transform:translateX(0);
+}
+
+}
+
+.fade-left{
+animation:fadeLeft .8s ease forwards;
+}
+
+/* =====================================================
+FADE RIGHT
+===================================================== */
+
+@keyframes fadeRight{
+
+0%{
+opacity:0;
+transform:translateX(40px);
+}
+
+100%{
+opacity:1;
+transform:translateX(0);
+}
+
+}
+
+.fade-right{
+animation:fadeRight .8s ease forwards;
+}
+
+/* =====================================================
+ZOOM IN
+===================================================== */
+
+@keyframes zoomIn{
+
+0%{
+opacity:0;
+transform:scale(.8);
+}
+
+100%{
+opacity:1;
+transform:scale(1);
+}
+
+}
+
+.zoom-in{
+animation:zoomIn .8s ease forwards;
+}
+
+/* =====================================================
+FLOAT
+===================================================== */
+
+@keyframes floating{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-12px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
+
+.float{
+animation:floating 3s ease-in-out infinite;
+}
+
+/* =====================================================
+PULSE
+===================================================== */
+
+@keyframes pulse{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.05);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
+.pulse{
+animation:pulse 2s infinite;
+}
+
+/* =====================================================
+ROTATE
+===================================================== */
+
+@keyframes rotate360{
+
+0%{
+transform:rotate(0deg);
+}
+
+100%{
+transform:rotate(360deg);
+}
+
+}
+
+.rotate{
+animation:rotate360 12s linear infinite;
+}
+
+/* =====================================================
+LOADER
+===================================================== */
+
+.loader-logo
